@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox prefHeight="480.0" prefWidth="768.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nuzack.sice.HelloController">
+<VBox prefHeight="480.0" prefWidth="768.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nuzack.sice.LoginController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -17,7 +17,7 @@
             <Insets bottom="-10.0" left="100.0" right="100.0" />
         </VBox.margin>
     </TextField>
-    <Label layoutX="130.0" layoutY="30.0" text="Constraseña:">
+    <Label layoutX="130.0" layoutY="30.0" text="Contraseña:">
         <VBox.margin>
             <Insets bottom="-15.0" left="100.0" />
         </VBox.margin>
@@ -27,7 +27,7 @@
             <Insets bottom="-10.0" left="100.0" right="100.0" />
         </VBox.margin>
     </TextField>
-    <Button alignment="CENTER" onAction="#onHelloButtonClick" text="Iniciar Sesion" textAlignment="CENTER" textFill="RED">
+    <Button alignment="CENTER" onAction="#onHelloButtonClick" text="Ingresar" textAlignment="CENTER" textFill="RED">
         <VBox.margin>
             <Insets left="100.0" right="100.0" />
         </VBox.margin></Button>
