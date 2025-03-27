@@ -7,7 +7,8 @@ module com.nuzack.sice {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires com.google.gson;
 
-    opens com.nuzack.sice to javafx.fxml;
+    opens com.nuzack.sice to javafx.fxml, com.google.gson;
     exports com.nuzack.sice;
 }
