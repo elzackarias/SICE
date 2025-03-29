@@ -1,4 +1,4 @@
-package com.nuzack.sice;
+package com.nuzack.sice.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

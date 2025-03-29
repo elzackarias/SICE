@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nuzack.sice.controllers.HomeController">
+   <left>
+      <!-- <ListView fx:id="alumnosListView" editable="true" prefHeight="364.0" prefWidth="300.0" BorderPane.alignment="CENTER" /> -->
+      <TableView fx:id="alumnosTableView" onMouseClicked="#seleccionarAlumno" prefHeight="364.0" prefWidth="500.0">
+         <columns>
+            <TableColumn fx:id="columnaID" text="ID" />
+            <TableColumn fx:id="columnaApellidoPaterno" text="Apellido Paterno" />
+            <TableColumn fx:id="columnaApellidoMaterno" text="Apellido Materno" />
+            <TableColumn fx:id="columnaNombre" text="Nombre" />
+            <TableColumn fx:id="columnaSexo" text="Sexo" />
+         </columns>
+      </TableView>
+
+
+   </left>
+   <bottom>
+      <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#handleLogout" text="Cerrar Sesion" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="gradoField" promptText="Ej. 1" />
+            <TextField fx:id="grupoField" promptText="Ej. A" /> <!-- onAction="#buscarAlumnos" -->
+            <Button mnemonicParsing="false" onAction="#buscarAlumnos" text="Buscar" />
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="role" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

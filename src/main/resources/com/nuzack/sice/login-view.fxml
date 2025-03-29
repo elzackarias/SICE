@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nuzack.sice.LoginController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nuzack.sice.controllers.LoginController">
    <center>
       <VBox alignment="CENTER_LEFT" maxWidth="500.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -13,7 +13,7 @@
                <font>
                   <Font name="Inter Semi Bold" size="13.0" />
                </font></Label>
-            <TextField fx:id="username" prefHeight="35.0">
+            <TextField fx:id="username" prefHeight="35.0" promptText="Ingrese usuario">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin></TextField>
@@ -21,7 +21,7 @@
                <font>
                   <Font name="Inter Semi Bold" size="13.0" />
                </font></Label>
-            <PasswordField fx:id="password" prefHeight="35.0">
+            <PasswordField fx:id="password" prefHeight="35.0" promptText="Ingrese contraseña">
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin></PasswordField>
@@ -34,16 +34,40 @@
                   </Button>
                </children>
             </HBox>
+            <HBox alignment="CENTER" prefHeight="18.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Nuzack S.A.S 2025 ©" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </center>
    <bottom>
-      <VBox prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="datos" />
+         </children></VBox>
    </bottom>
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="datos" />
+            <VBox prefHeight="100.0" prefWidth="248.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="117.0" text="SICE">
+                     <font>
+                        <Font name="Technica-Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="248.0" text="Sistema Interno de Control Escolar" />
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" top="50.0" />
+               </HBox.margin>
+            </VBox>
          </children></HBox>
    </top>
    <left>
